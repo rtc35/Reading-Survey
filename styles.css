@@ -22,8 +22,8 @@ h1, p {
 
 p {
   font-size: 22px;
-  color: rgb(110, 50, 40);
-  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+  color: #dfd0c0;
+  text-shadow: -0.75px -0.75px 0 #000, 0.75px -0.75px 0 #000, -0.75px 0.75px 0 #000, 0.75px 0.75px 0 #000;
 }
 
 html, body{
