@@ -1,0 +1,158 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>What's on Your Bookshelf?</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <h1 id="title">What's on Your Bookshelf?</h1>
+    <p id="description"><b><u>A survey on reading habits and preferences</b></u></p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+
+      <fieldset>
+        <label id="name-label" for="name">Full Name: <input placeholder="Jane Doe" id="name" type="text" required/> </label>
+        <label id="email-label" for="email">Email Address: <input placeholder="janedoe@gmail.com" id="email" type="email" required/> </label>
+        <label id="number-label" for="number">Age: <input placeholder="20" id="number" type="number" max="100" min="3">
+      </fieldset>
+
+      <fieldset>
+        <label><u><b>How often do you read books?</b></u></label>
+        <label for="daily"><input id="daily" type="radio" name="frequency" value="daily" class="inline" checked/> Daily</label>
+        <label for="weekly"><input id="weekly" type="radio" name="frequency" value="weekly" class="inline"/> Weekly</label>
+        <label for="monthly"><input id="monthly" type="radio" name="frequency" value="monthly" class="inline"/> Monthly</label>
+        <label for="rarely"><input id="rarely" type="radio" name="frequency" value="rarely" class="inline"/> Rarely</label>
+
+        <label><br><u><b>What format do you prefer for reading books?</b></u></label>
+        <input id="print" type="checkbox" name="format" value="print" class="inline" checked><label for="print"> Print</label>
+        <input id="ebook" type="checkbox" name="format" value="ebook" class="inline"><label for="ebook"> eBook</label>
+        <input id="audiobook" type="checkbox" name="format" value="audiobook" class="inline"><label for="audiobook"> Audiobook</label>
+
+        <label><br><b><u>What is your favourite genre?</b></u></label>
+          <select id="dropdown" name="genre">
+            <option value="">(select one)</option>
+            <option value="1">Action adventure</option>
+            <option value="2">Comedy & Drama</option>
+            <option value="3">Fantasy</option>
+            <option value="4">Horror</option>
+            <option value="5">Mystery/Crime</option>
+            <option value="6">Non-Fiction</option>
+            <option value="7">Romance</option>
+            <option value="8">Science Fiction</option>  
+          </select>
+        </label>
+
+        <label for="least-genre"><br><b><u>Are there any genres you generally avoid? </b></u><input id="least-genre" type="text" placeholder="e.g. Self-help"></label>
+
+        <label><br><b><u>How do you choose which books to read?</b></u></label>
+        <input id="recomms" type="checkbox" name="choosing" value="recomms" class="inline" checked/><label for="recomms"> Recommendations from friends & family</label>
+        <input id="reviews" type="checkbox" name="choosing" value="reviews" class="inline"/><label for="reviews"> Reviews & Ratings</label>
+        <input id="bestseller" type="checkbox" name="choosing" value="bestseller" class="inline"/><label for="bestseller"> Bestseller Lists</label>
+        <input id="author" type="checkbox" name="choosing" value="author" class="inline"/><label for="author"> Author</label>
+        <input id="cover" type="checkbox" name="choosing" value="cover" class="inline"/><label for="cover"> Cover Design</label>
+        <input id="social" type="checkbox" name="choosing" value="social" class="inline"/><label for="social"> Social Media</label>
+
+        <label><br><b><u>What is the biggest challenge you face when trying to read more?</b></u></label>
+        <input id="time" type="radio" name="challenge" value="time" class="inline" checked><label for="time"> Lack of time</label>
+        <input id="distract" type="radio" name="challenge" value="distract" class="inline"><label for="distract"> Distractions</label>
+        <input id="find" type="radio" name="challenge" value="find" class="inline"><label for="find"> Finding good books</label>
+        <input id="span" type="radio" name="challenge" value="span" class="inline"><label for="span"> Attention Span</label>
+
+        <label for="fav"><br><b><u> What is your favourite book of all time and why? </b></u><textarea id="fav" name="fav" rows="3" cols="25" placeholder="Harry Potter series because..."></textarea>
+       </label>
+
+       <label for="suggest"><br><b><u>What is the next book you are looking forward to reading next? </b></u><textarea id="suggest" name="suggest" rows="3" cols="25" placeholder="The Night Circus by Erin Morgenstern"></textarea>
+       </label>   
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://i.pinimg.com/564x/c1/96/85/c19685a821f29b49b64eb7ed3284c302.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Courier;
+  font-size: 18px;
+}
+
+h1 {
+  color: rgb(110, 50, 40);
+  font-family: Impact;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  color: rgb(110, 50, 40);
+  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+form {
+  width: 100vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  color: #fefbea; 
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%
+}
+
+fieldset {
+  background-color: rgba(0, 50, 0, 0.7)
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5rem 0 0;
+  vertical-align: middle;
+  float: left;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  height: 2.25em;
+  font-size: 0.8em;
+  border-color: #ffffff;
+  min-width: 200px;
+  background-color: rgb(0, 50, 0);
+  color: #ffffff
+}
+
+
+
+** end of undefined **
+
