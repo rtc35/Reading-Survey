@@ -13,52 +13,52 @@
     <form id="survey-form" method="post" action="https://script.google.com/macros/s/AKfycbxzqx5hUSxyHosxnXMpWNHzxWrLm9JDjVpNN3OsZxW3m3111Ja08o_7p0aUbxHfNFq4UQ/exec">
 
       <fieldset>
-        <label id="name-label" for="name">Full Name: <input placeholder="Jane Doe" id="name" type="text" required/> </label>
-        <label id="email-label" for="email">Email Address: <input placeholder="janedoe@gmail.com" id="email" type="email" required/> </label>
-        <label id="number-label" for="number">Age: <input placeholder="20" id="number" type="number" max="100" min="3">
+        <label id="name-label" for="name">Full Name: <input placeholder="Jane Doe" id="name" type="text" name="Name" required/> </label>
+        <label id="email-label" for="email">Email Address: <input placeholder="janedoe@gmail.com" id="email" type="email" name="Email" required/> </label>
+        <label id="number-label" for="number">Age: <input placeholder="20" id="number" name="Age" type="number" max="100" min="3">
       </fieldset>
 
       <fieldset>
         <label><b>How often do you read books?</b></label>
-        <label for="daily"><input id="daily" type="radio" name="frequency" value="daily" class="inline" checked/> Daily</label>
-        <label for="weekly"><input id="weekly" type="radio" name="frequency" value="weekly" class="inline"/> Weekly</label>
-        <label for="monthly"><input id="monthly" type="radio" name="frequency" value="monthly" class="inline"/> Monthly</label>
-        <label for="rarely"><input id="rarely" type="radio" name="frequency" value="rarely" class="inline"/> Rarely</label>
+        <label for="daily"><input id="daily" type="radio" name="Frequency" value="Daily" class="inline" checked/> Daily</label>
+        <label for="weekly"><input id="weekly" type="radio" name="Frequency" value="Weekly" class="inline"/> Weekly</label>
+        <label for="monthly"><input id="monthly" type="radio" name="Frequency" value="Monthly" class="inline"/> Monthly</label>
+        <label for="rarely"><input id="rarely" type="radio" name="Frequency" value="Rarely" class="inline"/> Rarely</label>
 
         <label><br><b>What format do you prefer for reading books?</b></label>
-        <input id="print" type="checkbox" name="format" value="print" class="inline" checked><label for="print"> Print</label>
-        <input id="ebook" type="checkbox" name="format" value="ebook" class="inline"><label for="ebook"> eBook</label>
-        <input id="audiobook" type="checkbox" name="format" value="audiobook" class="inline"><label for="audiobook"> Audiobook</label>
+        <input id="print" type="checkbox" name="Format" value="Print" class="inline" checked><label for="print"> Print</label>
+        <input id="ebook" type="checkbox" name="Format" value="eBook" class="inline"><label for="ebook"> eBook</label>
+        <input id="audiobook" type="checkbox" name="Format" value="Audiobook" class="inline"><label for="audiobook"> Audiobook</label>
 
         <label><br><b>What is your favourite genre?</b></label>
-          <select id="dropdown" name="genre">
+          <select id="dropdown" name="Genre">
             <option value="">(select one)</option>
-            <option value="1">Action adventure</option>
-            <option value="2">Comedy & Drama</option>
-            <option value="3">Fantasy</option>
-            <option value="4">Horror</option>
-            <option value="5">Mystery/Crime</option>
-            <option value="6">Non-Fiction</option>
-            <option value="7">Romance</option>
-            <option value="8">Science Fiction</option>  
+            <option value="Action adventure">Action adventure</option>
+            <option value="Comedy & Drama">Comedy & Drama</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Horror">Horror</option>
+            <option value="Mystery/Crime">Mystery/Crime</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Romance">Romance</option>
+            <option value="Science Fiction">Science Fiction</option>  
           </select>
         </label>
 
-        <label for="least-genre"><br><b>Are there any genres you generally avoid? </b><input id="least-genre" type="text" placeholder="e.g. Self-help"></label>
+        <label for="least-genre"><br><b>Are there any genres you generally avoid? </b><input id="least-genre" type="text" placeholder="e.g. Self-help" name="Least-Fav-Genre></label>
 
         <label><br><b>How do you choose which books to read?</b></label>
-        <input id="recomms" type="checkbox" name="choosing" value="recomms" class="inline" checked/><label for="recomms"> Recommendations from friends & family</label>
-        <input id="reviews" type="checkbox" name="choosing" value="reviews" class="inline"/><label for="reviews"> Reviews & Ratings</label>
-        <input id="bestseller" type="checkbox" name="choosing" value="bestseller" class="inline"/><label for="bestseller"> Bestseller Lists</label>
-        <input id="author" type="checkbox" name="choosing" value="author" class="inline"/><label for="author"> Author</label>
-        <input id="cover" type="checkbox" name="choosing" value="cover" class="inline"/><label for="cover"> Cover Design</label>
-        <input id="social" type="checkbox" name="choosing" value="social" class="inline"/><label for="social"> Social Media</label>
+        <input id="recomms" type="checkbox" name="Choice" value="Recommendations" class="inline" checked/><label for="recomms"> Recommendations from friends & family</label>
+        <input id="reviews" type="checkbox" name="Choice" value="Reviews" class="inline"/><label for="reviews"> Reviews & Ratings</label>
+        <input id="bestseller" type="checkbox" name="Choice" value="Bestseller Lists" class="inline"/><label for="bestseller"> Bestseller Lists</label>
+        <input id="author" type="checkbox" name="Choice" value="Author" class="inline"/><label for="author"> Author</label>
+        <input id="cover" type="checkbox" name="Choice" value="Cover" class="inline"/><label for="cover"> Cover Design</label>
+        <input id="social" type="checkbox" name="Choice" value="Social Media" class="inline"/><label for="social"> Social Media</label>
 
         <label><br><b>What is the biggest challenge you face when trying to read more?</b></label>
-        <input id="time" type="radio" name="challenge" value="time" class="inline" checked><label for="time"> Lack of time</label>
-        <input id="distract" type="radio" name="challenge" value="distract" class="inline"><label for="distract"> Distractions</label>
-        <input id="find" type="radio" name="challenge" value="find" class="inline"><label for="find"> Finding good books</label>
-        <input id="span" type="radio" name="challenge" value="span" class="inline"><label for="span"> Attention Span</label>
+        <input id="time" type="radio" name="Challenges" value="Lack of Time" class="inline" checked><label for="time"> Lack of time</label>
+        <input id="distract" type="radio" name="Challenges" value="Distractions" class="inline"><label for="distract"> Distractions</label>
+        <input id="find" type="radio" name="Challenges" value="Unable to find books" class="inline"><label for="find"> Finding good books</label>
+        <input id="span" type="radio" name="Challenges" value="Attention span" class="inline"><label for="span"> Attention Span</label>
 
         <label for="fav"><br><b> What is your favourite book of all time and why? </b><textarea id="fav" name="fav" rows="3" cols="25" placeholder="Harry Potter series because..."></textarea>
        </label>
