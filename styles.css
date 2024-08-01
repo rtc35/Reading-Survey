@@ -16,6 +16,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url(desktop-bg.jpg);
+  }
+}
+
 h1 {
   color: rgb(110, 50, 40);
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
